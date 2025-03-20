@@ -12,3 +12,4 @@ spring:
   data:
     mongodb:
       uri: mongodb+srv://arun:SunJava123@arun.l7wpi.mongodb.net/?retryWrites=true&w=majority&appName=arun
+      database: goods-service
