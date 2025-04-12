@@ -25,3 +25,10 @@ spring:
           uri: lb://order-service
           predicates:
             - Path=/order-service/**
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG  # Enables DEBUG level logging for Gateway routes
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG  # Log request details
+    org.springframework.cloud.gateway.filter: DEBUG  # Detailed logs for filters in the Gateway
+    org.springframework.cloud.gateway.route: DEBUG
