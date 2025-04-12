@@ -26,6 +26,11 @@ spring:
           predicates:
             - Path=/order-service/**
 
+      discovery:
+        locator:
+          enabled: true
+          lowerCaseServiceId: true
+
 logging:
   level:
     org.springframework.cloud.gateway: DEBUG  # Enables DEBUG level logging for Gateway routes
