@@ -11,25 +11,25 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: consumer-service
+        - id: CONSUMER-SERVICE
           uri: http://localhost:8082
           predicates:
             - Path=/consumer-service/**
 
-        - id: goods-service
+        - id: GOODS-SERVICE
           uri: http://localhost:8081
           predicates:
             - Path=/goods-service/**
 
-        - id: order-service
+        - id: ORDER-SERVICE
           uri: http://localhost:8083
           predicates:
             - Path=/order-service/**
 
-      discovery:
-        locator:
-          enabled: true
-          lowerCaseServiceId: true
+      # discovery:
+      #   locator:
+      #     enabled: true
+      #     lowerCaseServiceId: true
 
 logging:
   level:
