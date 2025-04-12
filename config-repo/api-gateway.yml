@@ -22,7 +22,7 @@ spring:
             - Path=/goods-service/**
 
         - id: ORDER-SERVICE
-          uri: http://localhost:8083
+          uri: http://localhost:8083/order-service
           predicates:
             - Path=/order-service/**
 
